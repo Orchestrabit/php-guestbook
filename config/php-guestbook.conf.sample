@@ -1,0 +1,8 @@
+# config for apache 2.4
+# set to /etc/httpd/conf.d
+
+Alias /php-guestbook /var/webapps/php-guestbook/html
+
+<Directory /var/webapps/php-guestbook/html>
+    Require all granted
+</Directory>
